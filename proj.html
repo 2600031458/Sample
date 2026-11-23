@@ -1,38 +1,63 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>NETRA Mission Control</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETRA Dashboard</title>
     <link rel="stylesheet" href="proj.css">
 </head>
 <body>
 
-    <header class="navbar">
+<div class="browser">
 
-        <div class="logo">
-            <span class="n">N</span>
-            <span class="brand">NETRA</span>
+    <div class="browser-top">
+        <div class="dots">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
         </div>
 
-        <div class="heading">
-            <h1>– Mission Control</h1>
-            <p>Smart Rover Fleet. Intelligent Campus.</p>
-        </div>
+        <div class="address">127.0.0.1:5500/index.html</div>
+    </div>
 
-        <div class="actions">
+    <header>NETRA</header>
 
-            <div class="status">
-                <span class="dot"></span>
-                <span>Live - Simulated Telemetry</span>
+    <main>
+        <div class="cards">
+
+            <div class="card">
+                <h4>ROVERS ONLINE</h4>
+                <h2>6 / 6</h2>
+                <p>Active rover units</p>
             </div>
 
-            <button class="dispatch">
-                Dispatch Mission
-            </button>
+            <div class="card">
+                <h4>AVERAGE BATTERY</h4>
+                <h2>76%</h2>
+                <p>Fleet battery level</p>
+            </div>
+
+            <div class="card">
+                <h4>OPEN ALERTS</h4>
+                <h2>0</h2>
+                <p>Requires attention</p>
+            </div>
+
+            <div class="card">
+                <h4>DISTANCE TODAY</h4>
+                <h2>13.6 km</h2>
+                <p>Total simulated<br>distance</p>
+            </div>
 
         </div>
 
-    </header>
+        <div class="checkpoint">
+            Checkpoint: expected result
+        </div>
+    </main>
+
+</div>
 
 </body>
 </html>
