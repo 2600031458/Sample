@@ -1,0 +1,19 @@
+<html>
+    <body>
+<h2>
+    Enter your name
+</h2>
+       <input type="text" id ="username" placeholder="Enter your name"/>
+       <button onclick="greet()">submit</button>
+       <h3 id="result"></h3>
+       <script>
+        function greet(){
+            let name = document.getElementById("username").value;
+
+            document.getElementById("result").innerHTML =
+            "HELLO "+name+", welcome!!";
+        }
+
+       </script>
+    </body>
+</html>
