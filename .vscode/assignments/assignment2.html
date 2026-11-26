@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospital Appointment Website">
+    <title>Hospital Management</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background: #f2f7fa;
+        }
+
+        header, footer {
+            background: #087e8b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #07505a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section, article, aside {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #087e8b;
+            margin-bottom: 12px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #aaa;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: 2px solid #087e8b;
+        }
+
+        button {
+            background: #087e8b;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>City Hospital</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#appointment">Appointment</a>
+</nav>
+
+<main>
+
+    <section id="home">
+        <h2>Welcome to City Hospital</h2>
+        <p>We provide quality healthcare and medical services.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <article>
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency medical support.</p>
+        </article>
+        <article>
+            <h3>Cardiology</h3>
+            <p>Expert heart care and treatment.</p>
+        </article>
+        <article>
+            <h3>Neurology</h3>
+            <p>Specialized nervous system care.</p>
+        </article>
+    </section>
+
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <article>
+            <h3>Dr. Ravi</h3>
+            <p>Cardiologist</p>
+        </article>
+        <article>
+            <h3>Dr. Priya</h3>
+            <p>Neurologist</p>
+        </article>
+    </section>
+
+    <aside>
+        <h2>Notice</h2>
+        <p>Online appointments are now open!</p>
+    </aside>
+
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+
+        <form>
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" required>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" required>
+                <option value="">Choose Doctor</option>
+                <option>Dr. Ravi</option>
+                <option>Dr. Priya</option>
+            </select>
+
+            <label for="message">Health Concern:</label>
+            <textarea id="message" rows="3"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>Contact: cityhospital@example.com</p>
+    <p>© 2026 City Hospital</p>
+</footer>
+
+</body>
+</html>
